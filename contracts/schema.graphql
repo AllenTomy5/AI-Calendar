@@ -1,0 +1,128 @@
+"""
+API Versioning Strategy: Schema Evolution
+- New fields may be added at any time, but existing fields will not be removed immediately.
+- Breaking Change Policy: Fields will be marked as @deprecated for at least 6 months before being removed from the schema.
+"""
+
+scalar DateTime
+
+enum RecurrenceFrequency {
+  NONE
+  DAILY
+  WEEKLY
+  MONTHLY
+  YEARLY
+}
+
+enum AttendeeStatus {
+  NEEDS_ACTION
+  ACCEPTED
+  DECLINED
+  TENTATIVE
+}
+
+type Attendee {
+  id: ID!
+  email: String!
+  status: AttendeeStatus!
+}
+
+type RecurrenceRule {
+  frequency: RecurrenceFrequency!
+  interval: Int!
+  endDate: DateTime
+}
+
+type Event {
+  id: ID!
+  title: String!
+  description: String
+  startTime: DateTime!
+  endTime: DateTime!
+  timeZone: String!
+  attendees: [Attendee!]!
+  recurrenceRule: RecurrenceRule
+}
+
+type Calendar {
+  id: ID!
+  name: String!
+  description: String
+  events(
+    first: Int
+    after: String
+    last: Int
+    before: String
+    start: DateTime
+    end: DateTime
+  ): EventConnection!
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+type EventEdge {
+  node: Event!
+  cursor: String!
+}
+
+type EventConnection {
+  edges: [EventEdge!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+input CreateEventInput {
+  title: String!
+  description: String
+  startTime: DateTime!
+  endTime: DateTime!
+  timeZone: String!
+  attendees: [ID!]
+  recurrenceRule: RecurrenceRuleInput
+}
+
+input UpdateEventInput {
+  id: ID!
+  title: String
+  description: String
+  startTime: DateTime
+  endTime: DateTime
+  timeZone: String
+  attendees: [ID!]
+  recurrenceRule: RecurrenceRuleInput
+}
+
+input InviteAttendeeInput {
+  eventId: ID!
+  email: String!
+}
+
+input RecurrenceRuleInput {
+  frequency: RecurrenceFrequency!
+  interval: Int!
+  endDate: DateTime
+}
+
+interface Error {
+  message: String!
+}
+
+type NotFoundError implements Error {
+  message: String!
+}
+
+type Query {
+  calendar(id: ID!): Calendar
+  events(start: DateTime!, end: DateTime!): EventConnection!
+}
+
+type Mutation {
+  createEvent(input: CreateEventInput!): Event
+  updateEvent(input: UpdateEventInput!): Event
+  inviteAttendee(input: InviteAttendeeInput!): Event
+}

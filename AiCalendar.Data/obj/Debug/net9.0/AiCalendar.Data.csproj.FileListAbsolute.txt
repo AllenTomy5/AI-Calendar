@@ -1,0 +1,12 @@
+D:\NET\Project\AiCalendar.Data\bin\Debug\net9.0\AiCalendar.Data.deps.json
+D:\NET\Project\AiCalendar.Data\bin\Debug\net9.0\AiCalendar.Data.dll
+D:\NET\Project\AiCalendar.Data\bin\Debug\net9.0\AiCalendar.Data.pdb
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.csproj.AssemblyReference.cache
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.AssemblyInfoInputs.cache
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.AssemblyInfo.cs
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.csproj.CoreCompileInputs.cache
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.dll
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\refint\AiCalendar.Data.dll
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.pdb
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\ref\AiCalendar.Data.dll
