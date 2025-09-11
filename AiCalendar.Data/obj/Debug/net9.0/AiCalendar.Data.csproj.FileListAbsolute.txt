@@ -10,3 +10,4 @@ D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.dll
 D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\refint\AiCalendar.Data.dll
 D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.pdb
 D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\ref\AiCalendar.Data.dll
+D:\NET\Project\AiCalendar.Data\obj\Debug\net9.0\AiCalendar.Data.sourcelink.json
