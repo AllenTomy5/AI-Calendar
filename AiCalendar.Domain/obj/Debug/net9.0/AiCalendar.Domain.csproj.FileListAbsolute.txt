@@ -14,3 +14,5 @@ D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\refint\AiCalendar.Domain.dll
 D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.pdb
 D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\ref\AiCalendar.Domain.dll
 D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.sourcelink.json
+D:\NET\Project\AiCalendar.Domain\bin\Debug\net9.0\AiCalendar.Contracts.dll
+D:\NET\Project\AiCalendar.Domain\bin\Debug\net9.0\AiCalendar.Contracts.pdb

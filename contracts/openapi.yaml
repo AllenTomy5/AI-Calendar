@@ -1,0 +1,98 @@
+openapi: 3.0.4
+info:
+  title: AiCalendar.Api
+  version: "1.0"
+servers:
+- url: /
+paths:
+  /:
+    get:
+      tags:
+      - AiCalendar.Api
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+  /favicon.ico:
+    get:
+      tags:
+      - AiCalendar.Api
+      responses:
+        "200":
+          description: OK
+  /api/Calendar/{id}:
+    get:
+      tags:
+      - Calendar
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                $ref: "#/components/schemas/Event"
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Event"
+            text/json:
+              schema:
+                $ref: "#/components/schemas/Event"
+  /api/Calendar/parse:
+    post:
+      tags:
+      - Calendar
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+          text/json:
+            schema:
+              type: string
+          application/*+json:
+            schema:
+              type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            text/plain:
+              schema:
+                $ref: "#/components/schemas/Event"
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Event"
+            text/json:
+              schema:
+                $ref: "#/components/schemas/Event"
+components:
+  schemas:
+    Event:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        title:
+          type: string
+          nullable: true
+        startTime:
+          type: string
+          format: date-time
+        endTime:
+          type: string
+          format: date-time
+        location:
+          type: string
+          nullable: true
+      additionalProperties: false

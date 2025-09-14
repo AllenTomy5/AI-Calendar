@@ -24,5 +24,37 @@ namespace AiCalendar.Data.Repositories
         {
             return await _context.Events.FirstOrDefaultAsync(e => e.Id == id);
         }
+
+        public async Task<IEnumerable<Event>> GetAllEventsAsync()
+        {
+            return await _context.Events.ToListAsync();
+        }
+
+        public async Task<Event> UpdateEventAsync(Event eventEntity)
+        {
+            _context.Events.Update(eventEntity);
+            await _context.SaveChangesAsync();
+            return eventEntity;
+        }
+
+        public async Task<bool> DeleteEventAsync(int id)
+        {
+            var eventEntity = await GetEventByIdAsync(id);
+            if (eventEntity != null)
+            {
+                _context.Events.Remove(eventEntity);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
+
+        public async Task<List<Event>> GetEventsInRangeAsync(DateTime startDate, DateTime endDate)
+        {
+            return await _context.Events
+                .Where(e => e.StartTime >= startDate && e.StartTime <= endDate)
+                .OrderBy(e => e.StartTime)
+                .ToListAsync();
+        }
     }
 }
