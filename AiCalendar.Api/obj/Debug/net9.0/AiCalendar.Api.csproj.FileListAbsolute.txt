@@ -145,3 +145,16 @@ D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\Serilog.Sinks.Console.dll
 D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
 D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\Serilog.Sinks.File.dll
 D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\FluentValidation.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\AiCalendar.Contracts.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\AiCalendar.Contracts.pdb
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\Microsoft.Extensions.AI.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\Microsoft.Extensions.AI.Abstractions.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\Microsoft.Extensions.AI.Ollama.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\System.Net.Http.Json.dll
+D:\NET\Project\AiCalendar.Api\bin\Debug\net9.0\OllamaSharp.dll
