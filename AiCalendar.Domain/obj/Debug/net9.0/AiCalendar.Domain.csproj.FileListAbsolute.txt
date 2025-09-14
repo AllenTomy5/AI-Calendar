@@ -1,0 +1,16 @@
+D:\NET\Project\AiCalendar.Domain\bin\Debug\net9.0\AiCalendar.Domain.deps.json
+D:\NET\Project\AiCalendar.Domain\bin\Debug\net9.0\AiCalendar.Domain.dll
+D:\NET\Project\AiCalendar.Domain\bin\Debug\net9.0\AiCalendar.Domain.pdb
+D:\NET\Project\AiCalendar.Domain\bin\Debug\net9.0\AiCalendar.Data.dll
+D:\NET\Project\AiCalendar.Domain\bin\Debug\net9.0\AiCalendar.Data.pdb
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.csproj.AssemblyReference.cache
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.AssemblyInfoInputs.cache
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.AssemblyInfo.cs
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.csproj.CoreCompileInputs.cache
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalend.98EB941E.Up2Date
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.dll
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\refint\AiCalendar.Domain.dll
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.pdb
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\ref\AiCalendar.Domain.dll
+D:\NET\Project\AiCalendar.Domain\obj\Debug\net9.0\AiCalendar.Domain.sourcelink.json
